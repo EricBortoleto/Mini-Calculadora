@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Calculadora</title>
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora</h1>
+      <div class="inputCnt">
+        <label for="primeiroNumero"></label>
+        <input
+          id="primeiroNumero"
+          type="number"
+          name="primeiroNumero"
+          placeholder="Digite um número"
+        />
+        <label for="segundoNumero"></label>
+        <input
+          id="segundoNumero"
+          type="number"
+          name="segundoNumero"
+          placeholder="Digite um número"
+        />
+        <input
+          id="botaoCalcular"
+          type="button"
+          value="Calcular"
+          onclick="calcular()"
+        />
+        <input
+          id="botaoLimpar"
+          type="button"
+          value="Limpar"
+          onclick="limpar()"
+        />
+      </div>
+    </header>
+
+    <main>
+      <div class="calculoCnt">
+        <p class="rotuloCalculo">Soma</p>
+        <p id="soma" class="resultado"></p>
+      </div>
+      <div class="calculoCnt">
+        <p class="rotuloCalculo">Raiz Quadrada</p>
+        <p id="raizQuadrada" class="resultado"></p>
+      </div>
+      <div class="calculoCnt">
+        <p class="rotuloCalculo">Potência</p>
+        <p id="potencia" class="resultado"></p>
+      </div>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

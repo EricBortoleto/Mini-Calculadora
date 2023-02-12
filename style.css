@@ -1,0 +1,129 @@
+body {
+  max-width: 900px;
+  margin: 200px auto;
+  background-color: rgb(30, 30, 30);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type='number'] {
+  background-color: transparent;
+  color: #00ffff;
+}
+
+input::placeholder {
+  color: #00ffff;
+  text-align: center;
+}
+
+.inputCnt {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#botaoCalcular {
+  border: 1px solid #00ffff;
+  background-color: rgb(30, 30, 30);
+  color: #00ffff;
+  border-radius: 5px;
+}
+
+#botaoCalcular:hover {
+  background-color: #00ffff;
+  color: black;
+}
+
+#botaoLimpar {
+  border: 1px solid #00ffff;
+  background-color: rgb(30, 30, 30);
+  color: #00ffff;
+  border-radius: 5px;
+}
+
+#botaoLimpar:hover {
+  background-color: #00ffff;
+  color: black;
+}
+
+header {
+  background-color: rgb(30, 30, 30);
+  padding: 20px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border: 2px solid #00ffff;
+  color: #00ffff;
+}
+
+main {
+  background-color: rgb(30, 30, 30);
+  padding: 20px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border: 2px solid #00ffff;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.calculoCnt {
+  border: 1px solid #00ffff;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.rotuloCalculo {
+  color: #00ffff;
+}
+
+.resultado {
+  color: #00ffff;
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    max-width: 480px;
+    margin: 80px 5px;
+  }
+
+  input {
+    margin: 5px;
+  }
+
+  .inputCnt {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  #botaoCalcular {
+    width: 80px;
+    height: 25px;
+    margin: 10px;
+    padding: 5px;
+  }
+
+  #botaoLimpar {
+    width: 80px;
+    height: 25px;
+    padding: 5px;
+  }
+
+  .calculoCnt {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .resultado {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
