@@ -87,6 +87,14 @@ main {
   font-size: 2em;
 }
 
+footer {
+  color: #00ffff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media only screen and (max-width: 480px) {
   body {
     max-width: 480px;
@@ -125,5 +133,12 @@ main {
   .resultado {
     font-size: 1.5em;
     text-align: center;
+  }
+
+  footer {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
